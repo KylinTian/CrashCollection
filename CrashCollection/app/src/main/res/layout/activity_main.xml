@@ -4,4 +4,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:id="@+id/tv_click_crash"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/main_click_crash"
+        android:layout_marginTop="60dp"
+        android:textSize="16sp" />
+
 </LinearLayout>
