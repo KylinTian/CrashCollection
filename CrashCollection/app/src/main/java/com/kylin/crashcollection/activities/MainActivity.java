@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.kylin.crashcollection.Model.NullObject;
+import com.kylin.crashcollection.model.NullObject;
 import com.kylin.crashcollection.R;
 import com.kylin.crashcollection.activities.base.BaseActivity;
 

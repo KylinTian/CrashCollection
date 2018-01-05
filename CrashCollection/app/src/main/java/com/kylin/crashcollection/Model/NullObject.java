@@ -1,4 +1,4 @@
-package com.kylin.crashcollection.Model;
+package com.kylin.crashcollection.model;
 
 /**
  * Created by Einstein on 2018/1/5.
