@@ -7,6 +7,7 @@ import android.widget.Toast;
 
 import com.kylin.crashcollection.R;
 import com.kylin.crashcollection.activities.base.BaseActivity;
+import com.kylin.crashcollection.model.NullObject;
 
 /**
  * Created by Einstein on 2018/1/3.
