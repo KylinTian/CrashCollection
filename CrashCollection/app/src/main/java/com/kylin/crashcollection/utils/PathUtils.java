@@ -35,7 +35,7 @@ public class PathUtils {
         String strAppRootPath = getRootFilePath() + APP_ROOT_PATH;
         File file = new File(strAppRootPath);
         if (!file.exists()) {
-            file.mkdirs();
+            file.mkdir();
         }
         return getRootFilePath() + APP_ROOT_PATH;
     }
@@ -49,7 +49,7 @@ public class PathUtils {
         String strCrashPath = getAppRootPath() + CRASH_PATH;
         File file = new File(strCrashPath);
         if (!file.exists()) {
-            file.mkdirs();
+            file.mkdir();
         }
         return strCrashPath;
     }
