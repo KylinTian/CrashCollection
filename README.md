@@ -20,7 +20,7 @@
 
 	3.Application init
 		CrashHandler crashHandler = CrashHandler.getInstance();
-		crashHandler.init(this);
+        	crashHandler.init(this);
 
 	4.Crash info store path
 		Default crash file path: /CrashCollection/crash/
