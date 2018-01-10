@@ -10,18 +10,18 @@ Android应用crash信息收集并存储在手机文件中.
 
 # How to use
 
-1.AndroidManifest permission
-<!-- Read and write sd card permission -->
-<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	1.AndroidManifest permission
+		<!-- Read and write sd card permission -->
+		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
-2.Application init
-CrashHandler crashHandler = CrashHandler.getInstance();
-crashHandler.init(this);
+	2.Application init
+		CrashHandler crashHandler = CrashHandler.getInstance();
+		crashHandler.init(this);
 
-3.Crash info store path
-Default crash file path: /CrashCollection/crash/
-You can modify crash info file in PathUtils.java
+	3.Crash info store path
+		Default crash file path: /CrashCollection/crash/
+		You can modify crash info file in PathUtils.java
 
-4.CrashHandler.java
-Copy this file to your project.
+	4.CrashHandler.java
+		Copy this file to your project.
