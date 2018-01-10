@@ -8,7 +8,7 @@ This Repository is created for collecting android crash infos while your applica
 Android应用crash信息收集并存储在手机文件中.
 该项目是用来收集应用crash信息.包括设备信息、当前时间、crash堆栈信息和其他相关信息.
 
-#How to use
+# How to use
 
 1.AndroidManifest permission
 <!-- Read and write sd card permission -->
