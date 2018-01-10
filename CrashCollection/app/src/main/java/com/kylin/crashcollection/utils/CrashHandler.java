@@ -173,8 +173,8 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         sb.append(result);
         try {
             String path = PathUtils.getCrashPath();
-            long timestamp = System.currentTimeMillis();
             String time = formatter.format(new Date());
+            long timestamp = System.currentTimeMillis();
             String fileName = "crash_" + time + "-" + timestamp + ".log";
             FileOutputStream fos = new FileOutputStream(path + fileName);
             fos.write(sb.toString().getBytes());
