@@ -76,7 +76,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             try {
                 Thread.sleep(3000);
             } catch (InterruptedException e) {
-                Log.e(TAG, "error : ", e);
+                e.printStackTrace();
             }
             // 退出程序
             android.os.Process.killProcess(android.os.Process.myPid());
@@ -132,16 +132,15 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
                 infos.put("versionCode", versionCode);
             }
         } catch (PackageManager.NameNotFoundException e) {
-            Log.e(TAG, "an error occured when collect package info", e);
+            e.printStackTrace();
         }
         Field[] fields = Build.class.getDeclaredFields();
         for (Field field : fields) {
             try {
                 field.setAccessible(true);
                 infos.put(field.getName(), field.get(null).toString());
-                Log.d(TAG, field.getName() + " : " + field.get(null));
             } catch (Exception e) {
-                Log.e(TAG, "an error occured when collect crash info", e);
+                e.printStackTrace();
             }
         }
     }
@@ -181,7 +180,7 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
             fos.close();
             return fileName;
         } catch (Exception e) {
-            Log.e(TAG, "an error occured while writing file...", e);
+            e.printStackTrace();
         }
         return null;
     }
