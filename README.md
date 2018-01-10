@@ -15,8 +15,10 @@
 		<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 		
-	2.CrashHandler.java
-		Copy this file to your project.
+	2.CrashHandler.java & PathUtils.java
+		Copy these two files to your project.
+		PathUtils.java is used to define crash file path.
+		CrashHandler.java is used to collect and store crash info while application crashed.
 
 	3.Application init
 		CrashHandler crashHandler = CrashHandler.getInstance();
